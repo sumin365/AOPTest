@@ -1,15 +1,13 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.bitacademy</groupId>
-  <artifactId>aoptest</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
-  <!-- 프로젝트 빌드 설정 -->
-  <build>
-   
-       <plugins>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.biacademy</groupId>
+	<artifactId>aoptest</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<!-- 프로젝트 빌드 설정 -->
+	<build>
+		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
@@ -17,36 +15,25 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 					<release>11</release>
 				</configuration>
 			</plugin>
-			<plugin>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>3.2.3</version>
-			</plugin>
-       
-      </plugins>
-  </build>
-  
-  
-  
-  <!-- 의존성 -->
-  <dependencies>
-
-  <!-- spring context -->
-  <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
-  <dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-context</artifactId>
-    <version>4.3.30.RELEASE</version>
-  </dependency>
-  
-  <!-- spring aspect -->
-  <!-- https://mvnrepository.com/artifact/org.springframework/spring-aspects -->
-	<dependency>
-	    <groupId>org.springframework</groupId>
-	    <artifactId>spring-aspects</artifactId>
-	    <version>4.3.30.RELEASE</version>
-	</dependency>
-  
-  
- 
-  </dependencies>
+		</plugins>
+	</build>
+	
+	<!-- 의존성 -->
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+		<!-- Spring Context -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-context</artifactId>
+		    <version>4.3.30.RELEASE</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-aspects -->
+		<!-- Spring Aspect -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-aspects</artifactId>
+		    <version>4.3.30.RELEASE</version>
+		</dependency>
+						
+	</dependencies>
 </project>
